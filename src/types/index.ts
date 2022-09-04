@@ -1,14 +1,12 @@
 export type Status = 'backlog' | 'in progress' | 'done';
 
-export type BoardSection = {
-  id: number;
-  name: Status;
-  title: string;
-};
-
 export type Task = {
-  id: number;
+  id: string;
   title: string;
   description: string;
   status: Status;
+};
+
+export type BoardSections = {
+  [name: string]: Task[];
 };
