@@ -1,7 +1,8 @@
 import React from 'react';
+import BoardSectionList from './components/BoardSectionList';
 
 function App() {
-  return <div>hello</div>;
+  return <BoardSectionList />;
 }
 
 export default App;
